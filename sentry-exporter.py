@@ -19,10 +19,10 @@ def create_gauge(output,name):
 
 api_key = "e8c8dd24fa3f45feb976e9978a0da8c3c764b651047b4d95a4b4669b37f9f2cc"
 
-url = "https://sentry.efarda.ir/api/0/projects/sentry/boomcore/events/"
+url = "https://#YOURURL/api/0/projects/sentry/boomcore/events/"
 
 headers_sentry = {
-    'Authorization': 'Bearer e8c8dd24fa3f45feb976e9978a0da8c3c764b651047b4d95a4b4669b37f9f2cc',
+    'Authorization': 'YOUR TOKEN',
 }
 response_sentry = requests.get(url, headers=headers_sentry)
 print(response_sentry.content)
